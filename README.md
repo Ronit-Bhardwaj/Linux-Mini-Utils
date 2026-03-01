@@ -10,12 +10,16 @@ Usage:
 ./mini-grep-bin [-q] -e PATTERN [FILE...]
 
 Flags:
+```
   -e PATTERN   Regex pattern to search (required)
   -q           Quiet mode — omit line numbers
+  ```
 
 Examples:
+```
   ./mini-grep-bin -e "error" app.log
   cat file.txt | ./mini-grep-bin -e "foo"
+  ```
 
 Build:
 go build -o mini-grep-bin ./mini-grep
@@ -38,16 +42,20 @@ Flags:
   -h   Human-readable output (powers of 1024, e.g. 1.5G)
 
 Examples:
+```
   ./mini-df-bin
   ./mini-df-bin -h /home /tmp
   ./mini-df-bin /dev/shm
+  ```
 
 Build:
 go build -o mini-df-bin ./mini-df
 
 Run:
+```
 ./mini-df-bin
 ./mini-df-bin -h
+```
 
 ---
 
@@ -76,13 +84,17 @@ Inside the container:
 
 Build:
 
+```
 go build -o mini-grep-bin ./mini-grep
 go build -o mini-df-bin ./mini-df
+```
 
 Run:
 
+```
 ./mini-grep-bin -e "test" somefile.txt
 ./mini-df-bin -h
+```
 
 This ensures correct Linux behavior.
 
@@ -108,5 +120,7 @@ Linux-mini-utils
 
 Please build locally before running:
 
+```
 go build -o mini-grep-bin ./mini-grep
 go build -o mini-df-bin ./mini-df
+```
