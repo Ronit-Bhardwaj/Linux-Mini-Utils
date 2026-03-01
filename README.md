@@ -90,15 +90,17 @@ This ensures correct Linux behavior.
 
 ## Project Structure
 
+```
 Linux-mini-utils
-├── mini-grep/
+├── mini-grep
 │   └── main.go
-├── mini-df/
+├── mini-df
 │   ├── main.go
 │   ├── fs_linux.go
 │   └── fs_darwin.go
 ├── go.mod
 └── README.md
+```
 
 ---
 
